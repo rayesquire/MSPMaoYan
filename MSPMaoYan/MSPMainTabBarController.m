@@ -8,7 +8,7 @@
 
 #import "MSPMainTabBarController.h"
 #import "MSPNavigationController.h"
-#import "MSPMovieSegmentController.h"
+#import "MSPMovieViewController.h"
 #import "MSPTheaterViewController.h"
 #import "MSPDiscoverViewController.h"
 #import "MSPMineViewController.h"
@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MSPMovieSegmentController *view1 = [[MSPMovieSegmentController alloc]init];
+    MSPMovieViewController *view1 = [[MSPMovieViewController alloc]init];
     [self addViewContronller:view1 title:@"电影" image:@"tabbar_mainframe" selectedImage:@"tabbar_mainframeHL"];
     
     MSPTheaterViewController *view2 = [[MSPTheaterViewController alloc]init];
@@ -32,6 +32,7 @@
     MSPMineViewController *view4 = [[MSPMineViewController alloc]init];
     [self addViewContronller:view4 title:@"我" image:@"tabbar_me" selectedImage:@"tabbar_meHL"];
 
+    self.tabBar.tintColor = [UIColor redColor];
 }
 
 - (void)addViewContronller:(UIViewController *)viewController title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage {
@@ -40,11 +41,11 @@
     viewController.tabBarItem.image = [UIImage imageNamed:image];
     viewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
-    selectedTextAttrs[NSForegroundColorAttributeName] = MYColor(76, 178, 15);
-    [viewController.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
+//    NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
+//    selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
+//    [viewController.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
-    MSPNavigationController *navigationController = [[MSPNavigationController alloc]initWithRootViewController:viewController];
+    MSPNavigationController *navigationController = [[MSPNavigationController alloc] initWithRootViewController:viewController];
     
     [self addChildViewController:navigationController];
 }

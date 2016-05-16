@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71C18529D7D927C5889E248C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA5F4D2B920774928B3D4D3 /* libPods.a */; };
+		A624E76E1CE84DFA00798778 /* MSPScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A624E76D1CE84DFA00798778 /* MSPScrollView.m */; };
+		A624E7711CE84E0200798778 /* MSPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A624E7701CE84E0200798778 /* MSPPageControl.m */; };
+		A624E7731CE8523100798778 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A624E7721CE8523100798778 /* default.jpg */; };
+		A624E7761CE8818E00798778 /* MSPSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A624E7751CE8818E00798778 /* MSPSegmentedControl.m */; };
 		A62603EC1CE2D45100137F97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A62603EB1CE2D45100137F97 /* main.m */; };
 		A62603EF1CE2D45100137F97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A62603EE1CE2D45100137F97 /* AppDelegate.m */; };
 		A62603F71CE2D45100137F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62603F61CE2D45100137F97 /* Assets.xcassets */; };
@@ -14,10 +19,14 @@
 		A62604101CE2D45100137F97 /* MSPMaoYanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A626040F1CE2D45100137F97 /* MSPMaoYanUITests.m */; };
 		A62604221CE2D50B00137F97 /* MSPMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62604211CE2D50B00137F97 /* MSPMainTabBarController.m */; };
 		A62604251CE2D65200137F97 /* MSPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62604241CE2D65200137F97 /* MSPNavigationController.m */; };
-		A62604281CE2D7BB00137F97 /* MSPMovieSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62604271CE2D7BB00137F97 /* MSPMovieSegmentController.m */; };
 		A626042B1CE2D7E900137F97 /* MSPTheaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A626042A1CE2D7E900137F97 /* MSPTheaterViewController.m */; };
 		A626042E1CE2D7F700137F97 /* MSPDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A626042D1CE2D7F700137F97 /* MSPDiscoverViewController.m */; };
 		A62604311CE2D80900137F97 /* MSPMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62604301CE2D80900137F97 /* MSPMineViewController.m */; };
+		A656D1E41CE3849D00607831 /* MSPMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656D1E31CE3849D00607831 /* MSPMovieViewController.m */; };
+		A6C2D4771CE9B7F000D23CC3 /* MSPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D4761CE9B7F000D23CC3 /* MSPButton.m */; };
+		A6C2D47A1CEA038E00D23CC3 /* MSPHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D4791CEA038E00D23CC3 /* MSPHotViewController.m */; };
+		A6C2D47D1CEA03A700D23CC3 /* MSPPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */; };
+		A6C2D4801CEA03D300D23CC3 /* MSPAbroadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D47F1CEA03D300D23CC3 /* MSPAbroadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA5F4D2B920774928B3D4D3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F7A816226C177C28983B3A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A624E76C1CE84DF100798778 /* MSPScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPScrollView.h; sourceTree = "<group>"; };
+		A624E76D1CE84DFA00798778 /* MSPScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPScrollView.m; sourceTree = "<group>"; };
+		A624E76F1CE84E0200798778 /* MSPPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPPageControl.h; sourceTree = "<group>"; };
+		A624E7701CE84E0200798778 /* MSPPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPPageControl.m; sourceTree = "<group>"; };
+		A624E7721CE8523100798778 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		A624E7741CE8818E00798778 /* MSPSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPSegmentedControl.h; sourceTree = "<group>"; };
+		A624E7751CE8818E00798778 /* MSPSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPSegmentedControl.m; sourceTree = "<group>"; };
 		A62603E71CE2D45100137F97 /* MSPMaoYan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSPMaoYan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62603EB1CE2D45100137F97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A62603ED1CE2D45100137F97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,14 +72,23 @@
 		A62604211CE2D50B00137F97 /* MSPMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPMainTabBarController.m; sourceTree = "<group>"; };
 		A62604231CE2D65200137F97 /* MSPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPNavigationController.h; sourceTree = "<group>"; };
 		A62604241CE2D65200137F97 /* MSPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPNavigationController.m; sourceTree = "<group>"; };
-		A62604261CE2D7BB00137F97 /* MSPMovieSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPMovieSegmentController.h; sourceTree = "<group>"; };
-		A62604271CE2D7BB00137F97 /* MSPMovieSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPMovieSegmentController.m; sourceTree = "<group>"; };
 		A62604291CE2D7E900137F97 /* MSPTheaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPTheaterViewController.h; sourceTree = "<group>"; };
 		A626042A1CE2D7E900137F97 /* MSPTheaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPTheaterViewController.m; sourceTree = "<group>"; };
 		A626042C1CE2D7F700137F97 /* MSPDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPDiscoverViewController.h; sourceTree = "<group>"; };
 		A626042D1CE2D7F700137F97 /* MSPDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPDiscoverViewController.m; sourceTree = "<group>"; };
 		A626042F1CE2D80900137F97 /* MSPMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPMineViewController.h; sourceTree = "<group>"; };
 		A62604301CE2D80900137F97 /* MSPMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPMineViewController.m; sourceTree = "<group>"; };
+		A656D1E21CE3849D00607831 /* MSPMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPMovieViewController.h; sourceTree = "<group>"; };
+		A656D1E31CE3849D00607831 /* MSPMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPMovieViewController.m; sourceTree = "<group>"; };
+		A6C2D4751CE9B7F000D23CC3 /* MSPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPButton.h; sourceTree = "<group>"; };
+		A6C2D4761CE9B7F000D23CC3 /* MSPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPButton.m; sourceTree = "<group>"; };
+		A6C2D4781CEA038E00D23CC3 /* MSPHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPHotViewController.h; sourceTree = "<group>"; };
+		A6C2D4791CEA038E00D23CC3 /* MSPHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPHotViewController.m; sourceTree = "<group>"; };
+		A6C2D47B1CEA03A700D23CC3 /* MSPPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPPreviewViewController.h; sourceTree = "<group>"; };
+		A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPPreviewViewController.m; sourceTree = "<group>"; };
+		A6C2D47E1CEA03D300D23CC3 /* MSPAbroadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPAbroadViewController.h; sourceTree = "<group>"; };
+		A6C2D47F1CEA03D300D23CC3 /* MSPAbroadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPAbroadViewController.m; sourceTree = "<group>"; };
+		FABF229DA7F85A965926805A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C18529D7D927C5889E248C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +117,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5826CEF5FD58737821BE7CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AA5F4D2B920774928B3D4D3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A624E7671CE8474100798778 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A62603ED1CE2D45100137F97 /* AppDelegate.h */,
+				A62603EE1CE2D45100137F97 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A624E7681CE8475200798778 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A62604201CE2D50B00137F97 /* MSPMainTabBarController.h */,
+				A62604211CE2D50B00137F97 /* MSPMainTabBarController.m */,
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
+		A624E7691CE8477600798778 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				A62604231CE2D65200137F97 /* MSPNavigationController.h */,
+				A62604241CE2D65200137F97 /* MSPNavigationController.m */,
+			);
+			name = NavigationController;
+			sourceTree = "<group>";
+		};
+		A624E76A1CE8478800798778 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2D4811CEA03D800D23CC3 /* Movie */,
+				A6C2D4821CEA03E700D23CC3 /* Theater */,
+				A6C2D4831CEA03F000D23CC3 /* Discover */,
+				A6C2D4841CEA03F700D23CC3 /* Mine */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		A624E76B1CE84DDE00798778 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A624E7781CE881AB00798778 /* MSPSegmentedControl */,
+				A624E7771CE881A100798778 /* MSPScrollView */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		A624E7771CE881A100798778 /* MSPScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				A624E76F1CE84E0200798778 /* MSPPageControl.h */,
+				A624E7701CE84E0200798778 /* MSPPageControl.m */,
+				A624E76C1CE84DF100798778 /* MSPScrollView.h */,
+				A624E76D1CE84DFA00798778 /* MSPScrollView.m */,
+			);
+			name = MSPScrollView;
+			sourceTree = "<group>";
+		};
+		A624E7781CE881AB00798778 /* MSPSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				A624E7741CE8818E00798778 /* MSPSegmentedControl.h */,
+				A624E7751CE8818E00798778 /* MSPSegmentedControl.m */,
+				A6C2D4751CE9B7F000D23CC3 /* MSPButton.h */,
+				A6C2D4761CE9B7F000D23CC3 /* MSPButton.m */,
+			);
+			name = MSPSegmentedControl;
+			sourceTree = "<group>";
+		};
 		A62603DE1CE2D45100137F97 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +201,8 @@
 				A62604031CE2D45100137F97 /* MSPMaoYanTests */,
 				A626040E1CE2D45100137F97 /* MSPMaoYanUITests */,
 				A62603E81CE2D45100137F97 /* Products */,
+				C4C87118FEAF21C819DBD9E8 /* Pods */,
+				5826CEF5FD58737821BE7CC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,22 +219,11 @@
 		A62603E91CE2D45100137F97 /* MSPMaoYan */ = {
 			isa = PBXGroup;
 			children = (
-				A62603ED1CE2D45100137F97 /* AppDelegate.h */,
-				A62603EE1CE2D45100137F97 /* AppDelegate.m */,
-				A62604201CE2D50B00137F97 /* MSPMainTabBarController.h */,
-				A62604211CE2D50B00137F97 /* MSPMainTabBarController.m */,
-				A62604231CE2D65200137F97 /* MSPNavigationController.h */,
-				A62604241CE2D65200137F97 /* MSPNavigationController.m */,
-				A62604261CE2D7BB00137F97 /* MSPMovieSegmentController.h */,
-				A62604271CE2D7BB00137F97 /* MSPMovieSegmentController.m */,
-				A62604291CE2D7E900137F97 /* MSPTheaterViewController.h */,
-				A626042A1CE2D7E900137F97 /* MSPTheaterViewController.m */,
-				A626042C1CE2D7F700137F97 /* MSPDiscoverViewController.h */,
-				A626042D1CE2D7F700137F97 /* MSPDiscoverViewController.m */,
-				A626042F1CE2D80900137F97 /* MSPMineViewController.h */,
-				A62604301CE2D80900137F97 /* MSPMineViewController.m */,
-				A62603F61CE2D45100137F97 /* Assets.xcassets */,
-				A62603FB1CE2D45100137F97 /* Info.plist */,
+				A624E76B1CE84DDE00798778 /* Tool */,
+				A624E7671CE8474100798778 /* AppDelegate */,
+				A624E7691CE8477600798778 /* NavigationController */,
+				A624E7681CE8475200798778 /* TabBarController */,
+				A624E76A1CE8478800798778 /* MainViewController */,
 				A62603EA1CE2D45100137F97 /* Supporting Files */,
 			);
 			path = MSPMaoYan;
@@ -136,6 +232,9 @@
 		A62603EA1CE2D45100137F97 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A624E7721CE8523100798778 /* default.jpg */,
+				A62603F61CE2D45100137F97 /* Assets.xcassets */,
+				A62603FB1CE2D45100137F97 /* Info.plist */,
 				A62603EB1CE2D45100137F97 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -159,6 +258,57 @@
 			path = MSPMaoYanUITests;
 			sourceTree = "<group>";
 		};
+		A6C2D4811CEA03D800D23CC3 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				A656D1E21CE3849D00607831 /* MSPMovieViewController.h */,
+				A656D1E31CE3849D00607831 /* MSPMovieViewController.m */,
+				A6C2D4781CEA038E00D23CC3 /* MSPHotViewController.h */,
+				A6C2D4791CEA038E00D23CC3 /* MSPHotViewController.m */,
+				A6C2D47B1CEA03A700D23CC3 /* MSPPreviewViewController.h */,
+				A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */,
+				A6C2D47E1CEA03D300D23CC3 /* MSPAbroadViewController.h */,
+				A6C2D47F1CEA03D300D23CC3 /* MSPAbroadViewController.m */,
+			);
+			name = Movie;
+			sourceTree = "<group>";
+		};
+		A6C2D4821CEA03E700D23CC3 /* Theater */ = {
+			isa = PBXGroup;
+			children = (
+				A62604291CE2D7E900137F97 /* MSPTheaterViewController.h */,
+				A626042A1CE2D7E900137F97 /* MSPTheaterViewController.m */,
+			);
+			name = Theater;
+			sourceTree = "<group>";
+		};
+		A6C2D4831CEA03F000D23CC3 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				A626042C1CE2D7F700137F97 /* MSPDiscoverViewController.h */,
+				A626042D1CE2D7F700137F97 /* MSPDiscoverViewController.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		A6C2D4841CEA03F700D23CC3 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A626042F1CE2D80900137F97 /* MSPMineViewController.h */,
+				A62604301CE2D80900137F97 /* MSPMineViewController.m */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		C4C87118FEAF21C819DBD9E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FABF229DA7F85A965926805A /* Pods.debug.xcconfig */,
+				90F7A816226C177C28983B3A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62604141CE2D45100137F97 /* Build configuration list for PBXNativeTarget "MSPMaoYan" */;
 			buildPhases = (
+				3055E44DE705EAD05E0DEE03 /* Check Pods Manifest.lock */,
 				A62603E31CE2D45100137F97 /* Sources */,
 				A62603E41CE2D45100137F97 /* Frameworks */,
 				A62603E51CE2D45100137F97 /* Resources */,
+				8F01B4B2E4E27FF7965C5970 /* Embed Pods Frameworks */,
+				DB9C4BA11CCB30C93C07D3AA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62603F71CE2D45100137F97 /* Assets.xcassets in Resources */,
+				A624E7731CE8523100798778 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +436,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3055E44DE705EAD05E0DEE03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F01B4B2E4E27FF7965C5970 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB9C4BA11CCB30C93C07D3AA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A62603E31CE2D45100137F97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A62604281CE2D7BB00137F97 /* MSPMovieSegmentController.m in Sources */,
+				A6C2D47A1CEA038E00D23CC3 /* MSPHotViewController.m in Sources */,
 				A62603EF1CE2D45100137F97 /* AppDelegate.m in Sources */,
+				A624E7711CE84E0200798778 /* MSPPageControl.m in Sources */,
+				A6C2D4771CE9B7F000D23CC3 /* MSPButton.m in Sources */,
 				A62604311CE2D80900137F97 /* MSPMineViewController.m in Sources */,
+				A624E7761CE8818E00798778 /* MSPSegmentedControl.m in Sources */,
+				A656D1E41CE3849D00607831 /* MSPMovieViewController.m in Sources */,
 				A62604221CE2D50B00137F97 /* MSPMainTabBarController.m in Sources */,
+				A624E76E1CE84DFA00798778 /* MSPScrollView.m in Sources */,
 				A626042B1CE2D7E900137F97 /* MSPTheaterViewController.m in Sources */,
+				A6C2D4801CEA03D300D23CC3 /* MSPAbroadViewController.m in Sources */,
+				A6C2D47D1CEA03A700D23CC3 /* MSPPreviewViewController.m in Sources */,
 				A626042E1CE2D7F700137F97 /* MSPDiscoverViewController.m in Sources */,
 				A62603EC1CE2D45100137F97 /* main.m in Sources */,
 				A62604251CE2D65200137F97 /* MSPNavigationController.m in Sources */,
@@ -414,9 +623,11 @@
 		};
 		A62604151CE2D45100137F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABF229DA7F85A965926805A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSPMaoYan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rayesquire.MSPMaoYan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,9 +636,11 @@
 		};
 		A62604161CE2D45100137F97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F7A816226C177C28983B3A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSPMaoYan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rayesquire.MSPMaoYan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +712,7 @@
 				A62604161CE2D45100137F97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A62604171CE2D45100137F97 /* Build configuration list for PBXNativeTarget "MSPMaoYanTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +721,7 @@
 				A62604191CE2D45100137F97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A626041A1CE2D45100137F97 /* Build configuration list for PBXNativeTarget "MSPMaoYanUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +730,7 @@
 				A626041C1CE2D45100137F97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

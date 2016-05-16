@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MSPMovieSegmentController : UIViewController
+@interface MSPMovieViewController : UIViewController
 
 @end

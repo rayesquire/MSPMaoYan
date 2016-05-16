@@ -21,7 +21,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[MSPMainTabBarController alloc] init];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

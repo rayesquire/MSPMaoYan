@@ -92,7 +92,7 @@
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    
+    NSLog(@"");
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

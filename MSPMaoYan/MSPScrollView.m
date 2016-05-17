@@ -281,6 +281,12 @@
     }
 }
 
+- (void)setInfinite:(BOOL)infinite {
+    _infinite = infinite;
+    
+    [self setupTimer];
+}
+
 #pragma mark - scrollview delegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     _isDraging = YES;
@@ -326,7 +332,7 @@
 
 - (void)reloadImage {
     NSInteger leftIndex,rightIndex;
-    CGPoint offset = [_mainView contentOffset];
+    CGPoint offset = _mainView.contentOffset;
     if (offset.x > self.frame.size.width) {
         _currentIndex = (_currentIndex + 1) % _totalCount;
     }
@@ -346,10 +352,6 @@
     [_mainView setContentOffset:offset animated:YES];
 }
 
-- (void)setInfinite:(BOOL)infinite {
-    _infinite = infinite;
-    
-    [self setupTimer];
-}
+
 
 @end

@@ -14,8 +14,13 @@
 - (void)clickButton:(NSInteger)index;
 @end
 
-@interface MSPSegmentedControl : UIView
+@protocol MSPSegmentedControlDatasource <NSObject>
 
+- (nullable NSArray<NSString *> *)subTitles;
+
+@end
+
+@interface MSPSegmentedControl : UIView
 
 /**
  *   delegate
@@ -24,9 +29,9 @@
 
 
 /**
- *   viewcontroller title array
+ *   datasource
  */
-@property (nonatomic, readwrite, copy) NSArray *items;
+@property (nonatomic, readwrite, weak) id <MSPSegmentedControlDatasource> datasource;
 
 
 /**
@@ -57,12 +62,5 @@
  *   current index
  */
 @property (nonatomic, readwrite, assign) NSInteger currentIndex;
-
-
-/**
- *   initialization
- */
-+ (instancetype)segmentWithFrame:(CGRect)frame items:(nullable NSArray *)array;
-
 
 @end

@@ -14,6 +14,7 @@
 @property (nonatomic, readwrite, strong) UIView *movingView;
 @property (nonatomic, readwrite, strong) MSPButton *lastButton;
 @property (nonatomic, readonly, assign) NSUInteger numberOfSegments;
+@property (nonatomic, readwrite, copy) NSArray *items;
 
 @end
 
@@ -24,28 +25,22 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self initialization];
-        [self updateLayout];
     }
     return self;
 }
 
-+ (instancetype)segmentWithFrame:(CGRect)frame items:(nullable NSArray *)array {
-    MSPSegmentedControl *control = [[self alloc] initWithFrame:frame];
-    control.layer.cornerRadius = 5;
-    control.items = array;
-    control.backgroundColor = [UIColor colorWithRed:227/255.0 green:36/255.0 blue:36/255.0 alpha:1];
-    return control;
-}
-
 - (void)initialization {
+    self.layer.cornerRadius = 5;
+    self.backgroundColor = [UIColor colorWithRed:227/255.0 green:36/255.0 blue:36/255.0 alpha:1];
     _titleColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
     _titleColorHL = [UIColor redColor];
     _movingColor = [UIColor whiteColor];
     _titleSize = 12;
     _currentIndex = 0;
+    _items = nil;
 }
 
-- (void)updateLayout {
+- (void)updateSegmentedControl {
     if (_numberOfSegments > 0) {
         if (self.subviews.count) {
             for (UIView *view in self.subviews) {
@@ -66,6 +61,12 @@
     }
 }
 
+- (void)loadData {
+    _items = [self.datasource subTitles];
+    _numberOfSegments = _items.count;
+    [self updateSegmentedControl];
+}
+
 - (MSPButton *)buttonWithTitle:(NSString *)title index:(NSInteger)index {
     MSPButton *button = [MSPButton buttonWithType:UIButtonTypeCustom];
     CGFloat width = self.frame.size.width / _numberOfSegments;
@@ -78,7 +79,7 @@
     [button setTitleColor:_titleColorHL forState:UIControlStateHighlighted];
     button.backgroundColor = [UIColor clearColor];
     [button setAdjustsImageWhenHighlighted:NO];
-    [button addTarget:self.delegate action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
@@ -112,35 +113,34 @@
 }
 
 #pragma mark - setter
-- (void)setItems:(NSArray *)items {
-    _items = items;
-    _numberOfSegments = items.count;
-    [self updateLayout];
-}
-
 - (void)setTitleColor:(UIColor *)titleColor {
     _titleColor = titleColor;
-    [self updateLayout];
+    [self updateSegmentedControl];
 }
 
 - (void)setTitleColorHL:(UIColor *)titleColorHL {
     _titleColorHL = titleColorHL;
-    [self updateLayout];
+    [self updateSegmentedControl];
 }
 
 - (void)setMovingColor:(UIColor *)movingColor {
     _movingColor = movingColor;
-    [self updateLayout];
+    [self updateSegmentedControl];
 }
 
 - (void)setTitleSize:(CGFloat)titleSize {
     _titleSize = titleSize;
-    [self updateLayout];
+    [self updateSegmentedControl];
 }
 
 - (void)setCurrentIndex:(NSInteger)currentIndex {
     _currentIndex = currentIndex;
-    [self updateLayout];
+    [self updateSegmentedControl];
+}
+
+- (void)setDatasource:(id<MSPSegmentedControlDatasource>)datasource {
+    _datasource = datasource;
+    [self loadData];
 }
 
 @end

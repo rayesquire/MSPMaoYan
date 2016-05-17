@@ -166,7 +166,6 @@
 		A624E76B1CE84DDE00798778 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				A624E7781CE881AB00798778 /* MSPSegmentedControl */,
 				A624E7771CE881A100798778 /* MSPScrollView */,
 			);
 			name = Tool;
@@ -219,8 +218,8 @@
 		A62603E91CE2D45100137F97 /* MSPMaoYan */ = {
 			isa = PBXGroup;
 			children = (
-				A624E76B1CE84DDE00798778 /* Tool */,
 				A624E7671CE8474100798778 /* AppDelegate */,
+				A624E76B1CE84DDE00798778 /* Tool */,
 				A624E7691CE8477600798778 /* NavigationController */,
 				A624E7681CE8475200798778 /* TabBarController */,
 				A624E76A1CE8478800798778 /* MainViewController */,
@@ -261,6 +260,7 @@
 		A6C2D4811CEA03D800D23CC3 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				A624E7781CE881AB00798778 /* MSPSegmentedControl */,
 				A656D1E21CE3849D00607831 /* MSPMovieViewController.h */,
 				A656D1E31CE3849D00607831 /* MSPMovieViewController.m */,
 				A6C2D4781CEA038E00D23CC3 /* MSPHotViewController.h */,

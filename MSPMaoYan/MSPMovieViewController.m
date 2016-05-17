@@ -13,13 +13,21 @@
 #import "MSPAbroadViewController.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height - 64
 
-@interface MSPMovieViewController ()  <MSPSegmentedControlDelegate>
+@interface MSPMovieViewController ()  <MSPSegmentedControlDelegate,MSPSegmentedControlDatasource,UIScrollViewDelegate>
 
 @property (nonatomic, readwrite, strong) MSPSegmentedControl *segmentedControl;
 
 @property (nonatomic, readwrite, assign) NSInteger currentPage;
+
+@property (nonatomic, readwrite, strong) UIScrollView *scrollView;
+
+@property (nonatomic, readwrite, strong) UIView *leftView;
+
+@property (nonatomic, readwrite, strong) UIView *centerView;
+
+@property (nonatomic, readwrite, strong) UIView *rightView;
 
 @property (nonatomic, readwrite, strong) MSPHotViewController *hotViewController;
 
@@ -37,44 +45,67 @@
     self.navigationItem.title = @"";
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    _segmentedControl = [MSPSegmentedControl segmentWithFrame:CGRectMake(self.view.frame.size.width / 2 - 90, 5, 180, 30) items:@[@"热映",@"待映",@"海外"]];
+    _segmentedControl = [[MSPSegmentedControl alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 2 - 90, 5, 180, 30)];
     _segmentedControl.delegate = self;
+    _segmentedControl.datasource = self;
     [self.navigationController.navigationBar addSubview:_segmentedControl];
     _currentPage = _segmentedControl.currentIndex;
     
+    _scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    _scrollView.backgroundColor = [UIColor whiteColor];
+    _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * 3, 0);
+    _scrollView.contentOffset = CGPointMake(SCREEN_WIDTH * _currentPage, 0);
+    _scrollView.delegate = self;
+    [self.view addSubview:_scrollView];
     
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self switchView];
+    self.hotViewController.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    self.previewViewController.view.frame = CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    self.abroadViewController.view.frame = CGRectMake(SCREEN_HEIGHT * 2, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    [_scrollView addSubview:self.hotViewController.view];
+    [_scrollView addSubview:self.previewViewController.view];
+    [_scrollView addSubview:self.abroadViewController.view];
+    
+    
+    
+    
+    
+    
 }
 
 #pragma mark - MSPSegmentedControlDelegate
 - (void)clickButton:(NSInteger)index {
     _currentPage = index;
-    [self switchView];
 }
 
-- (void)switchView {
-    switch (_currentPage) {
-        case 0:
-        {
-//            self.hotViewController
-            break;
-        }
-        case 1:
-        {
-//            self.previewViewController
-            break;
-        }
-        case 2:
-        {
-//            self.abroadViewController
-            break;
-        }
-        default:
-            break;
+#pragma mark - MSPSegmentedControlDatasource
+- (NSArray *)subTitles {
+    return @[@"热映",@"待映",@"海外"];
+}
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSLog(@"did end decelerating contentoffset.x: %d",(int)scrollView.contentOffset.x);
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    NSLog(@"did end scrollingAnimation contentoffset.x: %d",(int)scrollView.contentOffset.x);
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+}
+
+- (void)reloadView {
+    CGPoint offset = _scrollView.contentOffset;
+    if (offset.x > SCREEN_WIDTH) {
+        _currentPage ++;
+    }
+    else if (offset.x < SCREEN_WIDTH) {
+        _currentPage --;
     }
 }
 

@@ -35,6 +35,8 @@
 
 @property (nonatomic, readwrite, strong) MSPAbroadViewController *abroadViewController;
 
+@property (nonatomic, readwrite, assign) NSInteger currentOffsetX;
+
 @end
 
 @implementation MSPMovieViewController
@@ -50,6 +52,7 @@
     _segmentedControl.datasource = self;
     [self.navigationController.navigationBar addSubview:_segmentedControl];
     _currentPage = _segmentedControl.currentIndex;
+    _currentOffsetX = SCREEN_WIDTH * _currentPage;
     
     _scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     _scrollView.backgroundColor = [UIColor whiteColor];
@@ -84,15 +87,34 @@
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    NSLog(@"did end decelerating contentoffset.x: %d",(int)scrollView.contentOffset.x);
+//    NSInteger value = scrollView.contentOffset.x - _currentOffsetX;
+//    if (value) {
+//        _currentPage++;
+//    }
+//    else {
+//        _currentPage--;
+//    }
+//    [_scrollView setContentOffset:CGPointMake(SCREEN_WIDTH * _currentPage, 0) animated:YES];
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    NSLog(@"did end scrollingAnimation contentoffset.x: %d",(int)scrollView.contentOffset.x);
+    _currentOffsetX = scrollView.contentOffset.x;
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    NSLog(@"");
+    NSInteger value = scrollView.contentOffset.x - _currentOffsetX;
+    if (value) {
+        if (_currentOffsetX != [self subTitles].count * SCREEN_WIDTH) {
+            _currentPage++;
+        }
+    }
+    else {
+        if (_currentOffsetX) {
+            _currentPage--;
+        }
+    }
+    [_scrollView setContentOffset:CGPointMake(SCREEN_WIDTH * _currentPage, 0) animated:YES];
+    
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

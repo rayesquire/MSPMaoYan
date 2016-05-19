@@ -18,10 +18,14 @@
     CGFloat titleWidth = self.frame.size.width * 0.5;
     CGFloat titleHeight = self.frame.size.height * 0.5;
     self.titleLabel.frame = CGRectMake(titleX, titleY, titleWidth, titleHeight);
-    self.titleLabel.font = [UIFont boldSystemFontOfSize:15];
+    self.titleLabel.font = [UIFont boldSystemFontOfSize:_titleSize];
     self.titleLabel.backgroundColor = [UIColor clearColor];
 }
 
+- (void)setTitleSize:(CGFloat)titleSize {
+    _titleSize = titleSize;
+    self.titleLabel.font = [UIFont boldSystemFontOfSize:titleSize];
+}
 
 
 @end

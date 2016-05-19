@@ -283,7 +283,6 @@
 
 - (void)setInfinite:(BOOL)infinite {
     _infinite = infinite;
-    
     [self setupTimer];
 }
 
@@ -333,6 +332,7 @@
 - (void)reloadImage {
     NSInteger leftIndex,rightIndex;
     CGPoint offset = _mainView.contentOffset;
+    NSLog(@"%d",(int)offset.x);
     if (offset.x > self.frame.size.width) {
         _currentIndex = (_currentIndex + 1) % _totalCount;
     }
@@ -351,7 +351,5 @@
     offset.x += self.frame.size.width;
     [_mainView setContentOffset:offset animated:YES];
 }
-
-
 
 @end

@@ -35,7 +35,7 @@
     _titleColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
     _titleColorHL = [UIColor redColor];
     _movingColor = [UIColor whiteColor];
-    _titleSize = 12;
+    _titleSize = 14;
     _currentIndex = 0;
     _items = nil;
 }
@@ -73,6 +73,7 @@
     button.frame = CGRectMake(index * width, 0, width, self.frame.size.height);
     button.tag = index;
     button.layer.cornerRadius = 5;
+    button.titleSize = _titleSize;
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:_titleColor forState:UIControlStateNormal];
     [button setTitleColor:_titleColorHL forState:UIControlStateSelected];
@@ -100,6 +101,12 @@
         _lastButton.selected = NO;
         _lastButton = button;
     }];
+}
+
+- (void)updateFrame:(CGFloat)percentage {
+    CGRect bounds = _movingView.bounds;
+    CGFloat offsetX = (CGFloat)percentage * bounds.size.width;
+    _movingView.frame = CGRectMake(_currentIndex * bounds.size.width + offsetX, bounds.origin.y, bounds.size.width, bounds.size.height);
 }
 
 #pragma mark - getter
@@ -133,6 +140,9 @@
     [self updateSegmentedControl];
 }
 
+/**
+ *   切换界面以后更新segmentedControl中button的状态，此处有待优化
+ */
 - (void)setCurrentIndex:(NSInteger)currentIndex {
     _currentIndex = currentIndex;
     [self updateSegmentedControl];

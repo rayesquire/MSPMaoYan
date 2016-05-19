@@ -10,4 +10,6 @@
 
 @interface MSPButton : UIButton
 
+@property (nonatomic, readwrite, assign) CGFloat titleSize;
+
 @end

@@ -63,4 +63,8 @@
  */
 @property (nonatomic, readwrite, assign) NSInteger currentIndex;
 
+- (void)updateFrame:(CGFloat)percentage;
+
+- (void)updateLayout;
+
 @end

@@ -37,6 +37,8 @@
 
 @property (nonatomic, readwrite, assign) NSInteger currentOffsetX;
 
+@property (nonatomic, readwrite, assign) BOOL isDragging;
+
 @end
 
 @implementation MSPMovieViewController
@@ -46,6 +48,7 @@
     
     self.navigationItem.title = @"";
     self.automaticallyAdjustsScrollViewInsets = NO;
+    _isDragging = NO;
     
     _segmentedControl = [[MSPSegmentedControl alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 2 - 90, 5, 180, 30)];
     _segmentedControl.delegate = self;
@@ -59,6 +62,7 @@
     _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * 3, 0);
     _scrollView.contentOffset = CGPointMake(SCREEN_WIDTH * _currentPage, 0);
     _scrollView.delegate = self;
+    _scrollView.pagingEnabled = YES;
     [self.view addSubview:_scrollView];
     
     self.hotViewController.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -78,6 +82,7 @@
 #pragma mark - MSPSegmentedControlDelegate
 - (void)clickButton:(NSInteger)index {
     _currentPage = index;
+    [_scrollView setContentOffset:CGPointMake(index * SCREEN_WIDTH, 0) animated:YES];
 }
 
 #pragma mark - MSPSegmentedControlDatasource
@@ -86,48 +91,22 @@
 }
 
 #pragma mark - UIScrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    _isDragging = YES;
+}
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-//    NSInteger value = scrollView.contentOffset.x - _currentOffsetX;
-//    if (value) {
-//        _currentPage++;
-//    }
-//    else {
-//        _currentPage--;
-//    }
-//    [_scrollView setContentOffset:CGPointMake(SCREEN_WIDTH * _currentPage, 0) animated:YES];
-}
-
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    _currentOffsetX = scrollView.contentOffset.x;
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    NSInteger value = scrollView.contentOffset.x - _currentOffsetX;
-    if (value) {
-        if (_currentOffsetX != [self subTitles].count * SCREEN_WIDTH) {
-            _currentPage++;
-        }
-    }
-    else {
-        if (_currentOffsetX) {
-            _currentPage--;
-        }
-    }
-    [_scrollView setContentOffset:CGPointMake(SCREEN_WIDTH * _currentPage, 0) animated:YES];
-    
+    NSInteger value = scrollView.contentOffset.x / SCREEN_WIDTH;
+    _currentPage = value;
+    _segmentedControl.currentIndex = _currentPage;
+    _isDragging = NO;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-}
-
-- (void)reloadView {
-    CGPoint offset = _scrollView.contentOffset;
-    if (offset.x > SCREEN_WIDTH) {
-        _currentPage ++;
-    }
-    else if (offset.x < SCREEN_WIDTH) {
-        _currentPage --;
+    if (_isDragging) {
+        CGFloat x = scrollView.contentOffset.x - _currentPage * SCREEN_WIDTH;
+        CGFloat percentage = x / SCREEN_WIDTH;
+        [_segmentedControl updateFrame:percentage];
     }
 }
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71C18529D7D927C5889E248C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA5F4D2B920774928B3D4D3 /* libPods.a */; };
+		32AD1AFD836544749614F823 /* libPods-MSPMaoYan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FF5CA877DDDB571B1FA897 /* libPods-MSPMaoYan.a */; };
 		A624E76E1CE84DFA00798778 /* MSPScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A624E76D1CE84DFA00798778 /* MSPScrollView.m */; };
 		A624E7711CE84E0200798778 /* MSPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A624E7701CE84E0200798778 /* MSPPageControl.m */; };
 		A624E7731CE8523100798778 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A624E7721CE8523100798778 /* default.jpg */; };
@@ -23,6 +23,7 @@
 		A626042E1CE2D7F700137F97 /* MSPDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A626042D1CE2D7F700137F97 /* MSPDiscoverViewController.m */; };
 		A62604311CE2D80900137F97 /* MSPMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62604301CE2D80900137F97 /* MSPMineViewController.m */; };
 		A656D1E41CE3849D00607831 /* MSPMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656D1E31CE3849D00607831 /* MSPMovieViewController.m */; };
+		A66D15C01D2F3E2D00265542 /* HotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66D15BF1D2F3E2D00265542 /* HotViewCell.m */; };
 		A6C2D4771CE9B7F000D23CC3 /* MSPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D4761CE9B7F000D23CC3 /* MSPButton.m */; };
 		A6C2D47A1CEA038E00D23CC3 /* MSPHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D4791CEA038E00D23CC3 /* MSPHotViewController.m */; };
 		A6C2D47D1CEA03A700D23CC3 /* MSPPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */; };
@@ -47,8 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AA5F4D2B920774928B3D4D3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		90F7A816226C177C28983B3A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		15C76AB17B32B90B4842B576 /* Pods-MSPMaoYan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSPMaoYan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSPMaoYan/Pods-MSPMaoYan.debug.xcconfig"; sourceTree = "<group>"; };
+		161C75455F64192C1286583D /* Pods-MSPMaoYan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSPMaoYan.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSPMaoYan/Pods-MSPMaoYan.release.xcconfig"; sourceTree = "<group>"; };
 		A624E76C1CE84DF100798778 /* MSPScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPScrollView.h; sourceTree = "<group>"; };
 		A624E76D1CE84DFA00798778 /* MSPScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPScrollView.m; sourceTree = "<group>"; };
 		A624E76F1CE84E0200798778 /* MSPPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPPageControl.h; sourceTree = "<group>"; };
@@ -80,6 +81,8 @@
 		A62604301CE2D80900137F97 /* MSPMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPMineViewController.m; sourceTree = "<group>"; };
 		A656D1E21CE3849D00607831 /* MSPMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPMovieViewController.h; sourceTree = "<group>"; };
 		A656D1E31CE3849D00607831 /* MSPMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPMovieViewController.m; sourceTree = "<group>"; };
+		A66D15BE1D2F3E2D00265542 /* HotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewCell.h; sourceTree = "<group>"; };
+		A66D15BF1D2F3E2D00265542 /* HotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewCell.m; sourceTree = "<group>"; };
 		A6C2D4751CE9B7F000D23CC3 /* MSPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPButton.h; sourceTree = "<group>"; };
 		A6C2D4761CE9B7F000D23CC3 /* MSPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPButton.m; sourceTree = "<group>"; };
 		A6C2D4781CEA038E00D23CC3 /* MSPHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPHotViewController.h; sourceTree = "<group>"; };
@@ -88,7 +91,7 @@
 		A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPPreviewViewController.m; sourceTree = "<group>"; };
 		A6C2D47E1CEA03D300D23CC3 /* MSPAbroadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPAbroadViewController.h; sourceTree = "<group>"; };
 		A6C2D47F1CEA03D300D23CC3 /* MSPAbroadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPAbroadViewController.m; sourceTree = "<group>"; };
-		FABF229DA7F85A965926805A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C1FF5CA877DDDB571B1FA897 /* libPods-MSPMaoYan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSPMaoYan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71C18529D7D927C5889E248C /* libPods.a in Frameworks */,
+				32AD1AFD836544749614F823 /* libPods-MSPMaoYan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,10 +120,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5826CEF5FD58737821BE7CC7 /* Frameworks */ = {
+		27073AF0E64640B6FE39AA76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0AA5F4D2B920774928B3D4D3 /* libPods.a */,
+				C1FF5CA877DDDB571B1FA897 /* libPods-MSPMaoYan.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,8 +203,8 @@
 				A62604031CE2D45100137F97 /* MSPMaoYanTests */,
 				A626040E1CE2D45100137F97 /* MSPMaoYanUITests */,
 				A62603E81CE2D45100137F97 /* Products */,
-				C4C87118FEAF21C819DBD9E8 /* Pods */,
-				5826CEF5FD58737821BE7CC7 /* Frameworks */,
+				E639CD3C25EF03DDBFD50F56 /* Pods */,
+				27073AF0E64640B6FE39AA76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,18 +260,44 @@
 			path = MSPMaoYanUITests;
 			sourceTree = "<group>";
 		};
+		A66D15BB1D2F3DC800265542 /* Abroad */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2D47E1CEA03D300D23CC3 /* MSPAbroadViewController.h */,
+				A6C2D47F1CEA03D300D23CC3 /* MSPAbroadViewController.m */,
+			);
+			name = Abroad;
+			sourceTree = "<group>";
+		};
+		A66D15BC1D2F3DCE00265542 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2D47B1CEA03A700D23CC3 /* MSPPreviewViewController.h */,
+				A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */,
+			);
+			name = Preview;
+			sourceTree = "<group>";
+		};
+		A66D15BD1D2F3DD800265542 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2D4781CEA038E00D23CC3 /* MSPHotViewController.h */,
+				A6C2D4791CEA038E00D23CC3 /* MSPHotViewController.m */,
+				A66D15BE1D2F3E2D00265542 /* HotViewCell.h */,
+				A66D15BF1D2F3E2D00265542 /* HotViewCell.m */,
+			);
+			name = Hot;
+			sourceTree = "<group>";
+		};
 		A6C2D4811CEA03D800D23CC3 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				A624E7781CE881AB00798778 /* MSPSegmentedControl */,
 				A656D1E21CE3849D00607831 /* MSPMovieViewController.h */,
 				A656D1E31CE3849D00607831 /* MSPMovieViewController.m */,
-				A6C2D4781CEA038E00D23CC3 /* MSPHotViewController.h */,
-				A6C2D4791CEA038E00D23CC3 /* MSPHotViewController.m */,
-				A6C2D47B1CEA03A700D23CC3 /* MSPPreviewViewController.h */,
-				A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */,
-				A6C2D47E1CEA03D300D23CC3 /* MSPAbroadViewController.h */,
-				A6C2D47F1CEA03D300D23CC3 /* MSPAbroadViewController.m */,
+				A66D15BD1D2F3DD800265542 /* Hot */,
+				A66D15BC1D2F3DCE00265542 /* Preview */,
+				A66D15BB1D2F3DC800265542 /* Abroad */,
+				A624E7781CE881AB00798778 /* MSPSegmentedControl */,
 			);
 			name = Movie;
 			sourceTree = "<group>";
@@ -300,11 +329,11 @@
 			name = Mine;
 			sourceTree = "<group>";
 		};
-		C4C87118FEAF21C819DBD9E8 /* Pods */ = {
+		E639CD3C25EF03DDBFD50F56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FABF229DA7F85A965926805A /* Pods.debug.xcconfig */,
-				90F7A816226C177C28983B3A /* Pods.release.xcconfig */,
+				15C76AB17B32B90B4842B576 /* Pods-MSPMaoYan.debug.xcconfig */,
+				161C75455F64192C1286583D /* Pods-MSPMaoYan.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -316,12 +345,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62604141CE2D45100137F97 /* Build configuration list for PBXNativeTarget "MSPMaoYan" */;
 			buildPhases = (
-				3055E44DE705EAD05E0DEE03 /* Check Pods Manifest.lock */,
+				90B3906F46036D85B8B49406 /* [CP] Check Pods Manifest.lock */,
 				A62603E31CE2D45100137F97 /* Sources */,
 				A62603E41CE2D45100137F97 /* Frameworks */,
 				A62603E51CE2D45100137F97 /* Resources */,
-				8F01B4B2E4E27FF7965C5970 /* Embed Pods Frameworks */,
-				DB9C4BA11CCB30C93C07D3AA /* Copy Pods Resources */,
+				95EF313D7039800B6FF8F8E6 /* [CP] Embed Pods Frameworks */,
+				C23B20B8E0F8675D447C9C10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -437,14 +466,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3055E44DE705EAD05E0DEE03 /* Check Pods Manifest.lock */ = {
+		90B3906F46036D85B8B49406 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,34 +481,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8F01B4B2E4E27FF7965C5970 /* Embed Pods Frameworks */ = {
+		95EF313D7039800B6FF8F8E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSPMaoYan/Pods-MSPMaoYan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB9C4BA11CCB30C93C07D3AA /* Copy Pods Resources */ = {
+		C23B20B8E0F8675D447C9C10 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSPMaoYan/Pods-MSPMaoYan-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -503,6 +532,7 @@
 				A6C2D47D1CEA03A700D23CC3 /* MSPPreviewViewController.m in Sources */,
 				A626042E1CE2D7F700137F97 /* MSPDiscoverViewController.m in Sources */,
 				A62603EC1CE2D45100137F97 /* main.m in Sources */,
+				A66D15C01D2F3E2D00265542 /* HotViewCell.m in Sources */,
 				A62604251CE2D65200137F97 /* MSPNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,7 +653,7 @@
 		};
 		A62604151CE2D45100137F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FABF229DA7F85A965926805A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 15C76AB17B32B90B4842B576 /* Pods-MSPMaoYan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSPMaoYan/Info.plist;
@@ -636,7 +666,7 @@
 		};
 		A62604161CE2D45100137F97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90F7A816226C177C28983B3A /* Pods.release.xcconfig */;
+			baseConfigurationReference = 161C75455F64192C1286583D /* Pods-MSPMaoYan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSPMaoYan/Info.plist;

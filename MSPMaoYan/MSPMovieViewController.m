@@ -15,28 +15,20 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height - 64
 
-@interface MSPMovieViewController ()  <MSPSegmentedControlDelegate,MSPSegmentedControlDatasource,UIScrollViewDelegate>
+@interface MSPMovieViewController ()  <MSPSegmentedControlDelegate,
+                                       MSPSegmentedControlDatasource,
+                                       UIScrollViewDelegate>
 
 @property (nonatomic, readwrite, strong) MSPSegmentedControl *segmentedControl;
-
 @property (nonatomic, readwrite, assign) NSInteger currentPage;
-
 @property (nonatomic, readwrite, strong) UIScrollView *scrollView;
-
 @property (nonatomic, readwrite, strong) UIView *leftView;
-
 @property (nonatomic, readwrite, strong) UIView *centerView;
-
 @property (nonatomic, readwrite, strong) UIView *rightView;
-
 @property (nonatomic, readwrite, strong) MSPHotViewController *hotViewController;
-
 @property (nonatomic, readwrite, strong) MSPPreviewViewController *previewViewController;
-
 @property (nonatomic, readwrite, strong) MSPAbroadViewController *abroadViewController;
-
 @property (nonatomic, readwrite, assign) NSInteger currentOffsetX;
-
 @property (nonatomic, readwrite, assign) BOOL isDragging;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "MSPHotViewController.h"
 #import "MSPScrollView.h"
+#import "MSPHTTPSessionManager.h"
 
 @interface MSPHotViewController () <MSPScrollViewDelegate>
 
@@ -35,7 +36,8 @@
 
     self.movieListString = @"http://api.maoyan.com/mmdb/movie/v3/list/hot.json?uuid=AC27D1C920BEF408EBB7DFB2BBEE32FA416EF5221C9AB833B909395723477686&utm_source=AppStore&utm_term=7.0&utm_content=AC27D1C920BEF408EBB7DFB2BBEE32FA416EF5221C9AB833B909395723477686&version_name=7.0&utm_medium=iphone&movieBundleVersion=100&utm_campaign=AmovieBmovieH0&limit=12&__reqTraceID=5C34ED44-3A9A-4D78-959D-742375642C2B&client=iphone&ci=55&msid=BDFF6541-E340-4DF6-83A5-82E3CB7E1DC42016-07-07-14-51743";
     
-
+    MSPHTTPSessionManager *manager = [MSPHTTPSessionManager manager];
+    
 }
 
 #pragma mark - MSPScrollViewDelegate

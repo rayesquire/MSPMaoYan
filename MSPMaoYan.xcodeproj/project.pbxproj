@@ -24,6 +24,8 @@
 		A62604311CE2D80900137F97 /* MSPMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62604301CE2D80900137F97 /* MSPMineViewController.m */; };
 		A656D1E41CE3849D00607831 /* MSPMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656D1E31CE3849D00607831 /* MSPMovieViewController.m */; };
 		A66D15C01D2F3E2D00265542 /* HotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66D15BF1D2F3E2D00265542 /* HotViewCell.m */; };
+		A66D15C71D2F473300265542 /* MSPHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A66D15C61D2F473300265542 /* MSPHTTPRequest.m */; };
+		A66D15CA1D2F882500265542 /* MSPBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A66D15C91D2F882500265542 /* MSPBaseRequest.m */; };
 		A6C2D4771CE9B7F000D23CC3 /* MSPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D4761CE9B7F000D23CC3 /* MSPButton.m */; };
 		A6C2D47A1CEA038E00D23CC3 /* MSPHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D4791CEA038E00D23CC3 /* MSPHotViewController.m */; };
 		A6C2D47D1CEA03A700D23CC3 /* MSPPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C2D47C1CEA03A700D23CC3 /* MSPPreviewViewController.m */; };
@@ -83,6 +85,10 @@
 		A656D1E31CE3849D00607831 /* MSPMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPMovieViewController.m; sourceTree = "<group>"; };
 		A66D15BE1D2F3E2D00265542 /* HotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewCell.h; sourceTree = "<group>"; };
 		A66D15BF1D2F3E2D00265542 /* HotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewCell.m; sourceTree = "<group>"; };
+		A66D15C51D2F473300265542 /* MSPHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPHTTPRequest.h; sourceTree = "<group>"; };
+		A66D15C61D2F473300265542 /* MSPHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPHTTPRequest.m; sourceTree = "<group>"; };
+		A66D15C81D2F882500265542 /* MSPBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPBaseRequest.h; sourceTree = "<group>"; };
+		A66D15C91D2F882500265542 /* MSPBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPBaseRequest.m; sourceTree = "<group>"; };
 		A6C2D4751CE9B7F000D23CC3 /* MSPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPButton.h; sourceTree = "<group>"; };
 		A6C2D4761CE9B7F000D23CC3 /* MSPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPButton.m; sourceTree = "<group>"; };
 		A6C2D4781CEA038E00D23CC3 /* MSPHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPHotViewController.h; sourceTree = "<group>"; };
@@ -221,6 +227,7 @@
 		A62603E91CE2D45100137F97 /* MSPMaoYan */ = {
 			isa = PBXGroup;
 			children = (
+				A66D15C11D2F44F900265542 /* Network */,
 				A624E7671CE8474100798778 /* AppDelegate */,
 				A624E76B1CE84DDE00798778 /* Tool */,
 				A624E7691CE8477600798778 /* NavigationController */,
@@ -287,6 +294,17 @@
 				A66D15BF1D2F3E2D00265542 /* HotViewCell.m */,
 			);
 			name = Hot;
+			sourceTree = "<group>";
+		};
+		A66D15C11D2F44F900265542 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A66D15C51D2F473300265542 /* MSPHTTPRequest.h */,
+				A66D15C61D2F473300265542 /* MSPHTTPRequest.m */,
+				A66D15C81D2F882500265542 /* MSPBaseRequest.h */,
+				A66D15C91D2F882500265542 /* MSPBaseRequest.m */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		A6C2D4811CEA03D800D23CC3 /* Movie */ = {
@@ -518,11 +536,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66D15C71D2F473300265542 /* MSPHTTPRequest.m in Sources */,
 				A6C2D47A1CEA038E00D23CC3 /* MSPHotViewController.m in Sources */,
 				A62603EF1CE2D45100137F97 /* AppDelegate.m in Sources */,
 				A624E7711CE84E0200798778 /* MSPPageControl.m in Sources */,
 				A6C2D4771CE9B7F000D23CC3 /* MSPButton.m in Sources */,
 				A62604311CE2D80900137F97 /* MSPMineViewController.m in Sources */,
+				A66D15CA1D2F882500265542 /* MSPBaseRequest.m in Sources */,
 				A624E7761CE8818E00798778 /* MSPSegmentedControl.m in Sources */,
 				A656D1E41CE3849D00607831 /* MSPMovieViewController.m in Sources */,
 				A62604221CE2D50B00137F97 /* MSPMainTabBarController.m in Sources */,

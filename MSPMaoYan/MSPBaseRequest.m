@@ -201,8 +201,7 @@
  *
  *  @return 返回组合参数
  */
-+ (NSMutableDictionary *)requestParams:(NSDictionary *)dict
-{
++ (NSMutableDictionary *)requestParams:(NSDictionary *)dict {
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     return params;
 }

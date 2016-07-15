@@ -20,7 +20,6 @@
                                        UIScrollViewDelegate>
 
 @property (nonatomic, readwrite, strong) MSPSegmentedControl *segmentedControl;
-@property (nonatomic, readwrite, assign) NSInteger currentPage;
 @property (nonatomic, readwrite, strong) UIScrollView *scrollView;
 @property (nonatomic, readwrite, strong) UIView *leftView;
 @property (nonatomic, readwrite, strong) UIView *centerView;
@@ -29,6 +28,7 @@
 @property (nonatomic, readwrite, strong) MSPPreviewViewController *previewViewController;
 @property (nonatomic, readwrite, strong) MSPAbroadViewController *abroadViewController;
 @property (nonatomic, readwrite, assign) NSInteger currentOffsetX;
+@property (nonatomic, readwrite, assign) NSInteger currentPage;
 @property (nonatomic, readwrite, assign) BOOL isDragging;
 
 @end
